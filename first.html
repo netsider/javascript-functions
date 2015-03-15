@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+	<title>title</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
+</head>
+<body>
+<script>
+var calc = { // create object "calc" by assigning it to variable
+	status: 'Awesome',
+	plus: function (a,b) { // method 
+			console.log('A: ' + this),
+			console.log('B: ' + a+b),
+			console.log('C: ' + arguments),
+			console.log('D: ' + this.status)
+		)
+	}
+}
+calc.plus(2,2);
+			</script>
+</body>
+</html>

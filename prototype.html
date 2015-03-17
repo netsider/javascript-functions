@@ -7,20 +7,17 @@
 </head>
 <body>
 <script>
-// Second way to call a function in Javascrip
-// Invoking instances through a constructor.  The function itself becomes a constructor.
+var speak = function(text) {
+	console.log(text);
+}
 var Dog = function() {
 	var name, breed;
 }
+	Dog.prototype.speak = speak;
 	newdog = new Dog;
 	newdog.name = "Russ";
 	newdog.breed = "lab";
-	console.log(newdog.name);
-	
-	seconddog = new Dog;
-	seconddog.name = "Melissa";
-	seconddog.breed = "Poodle";
-	console.log(seconddog.name);
+	newdog.speak("Hello");
 </script>
 </body>
 </html>

@@ -8,14 +8,14 @@
 </head>
 <body>
 <script>
-var calc = { // create object "calc" by assigning it to variable
+// first way to call a function in Javascrip
+var calc = { // create object manually by assigning it to variable (also known as: "generating an object by adding a method")
 	status: 'Awesome',
 	plus: function (a,b) { // method 
 			console.log('A: ' + this),
 			console.log('B: ' + a+b),
 			console.log('C: ' + arguments),
 			console.log('D: ' + this.status)
-		)
 	}
 }
 calc.plus(2,2);
